@@ -49,7 +49,7 @@ class CycleGAN(Model):
             fake_photo = self.photo_gen(monet, training=True)
             cycled_monet = self.monet_gen(fake_photo, training=True)
             
-            # Random
+            # ----
             same_monet = self.monet_gen(monet, training=True)
             same_photo = self.photo_gen(photo, training=True)
             
